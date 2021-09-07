@@ -1,0 +1,102 @@
+.card--message {
+    // background-color: yellow;
+    padding: 1.5rem 4rem 1.5rem 2rem;
+    font-size: 1.6rem;
+    color: #565656;
+    line-height: 1.9;
+    border-radius: .2rem;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: .2rem;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .12)
+}
+
+.card--book {
+    background-color: #fff;
+    // overflow: hidden;
+    border-radius: .2rem;
+    height: 10rem;
+    // background-color: black;
+    word-break: break-word;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    transition: all .2s;
+    @include clearfix();
+    padding-right: 2rem;
+    
+    &__thumbnail {
+        // background-color: red;
+        float: left;
+        // width: 15%;
+        height: 100%;
+        position: relative;
+        width: 8rem;
+        @include clearfix();
+        &-img {
+            position: absolute;
+            height: 100%;
+            // width: 100%;
+            transition: all .3s;
+
+
+            &:hover {
+                z-index: 13;
+                transform: scale(3);
+            }
+        }
+    }
+
+    &__title {
+        // background-color: blue;
+        height: 33.333333%;
+        padding: .4rem;
+
+        &-link {
+            text-decoration: none;
+
+            h2 {
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 2.7rem;
+                color: #365899;
+            }
+        }
+    }
+
+    &__details {
+        // background-color: crimson;
+        height: 33.333333%;
+        padding: 1rem;
+
+        &-list {
+            list-style: circle;
+        }
+
+        &-item {
+            display: inline-block;
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+
+        &-content {
+            color: #006621;
+            font-size: 1.15rem;
+        }
+    }
+
+    &__description {
+        // background-color: coral;
+        height: 33.333333%;
+        color: #767676;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    &:hover {
+        border-color: #00b2ff #00b2ff #00b2ff;
+        -moz-box-shadow: 0 0 10px #00b2ff;
+        -webkit-box-shadow: 0 0 10px #00b2ff;
+         box-shadow: 0 0 10px #00b2ff;
+    }
+}

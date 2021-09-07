@@ -1,0 +1,56 @@
+body {
+    font-family: 'Roboto',sans-serif;
+}
+
+.heading-secondary {
+    font-weight: 700;
+    color: #4A4848;
+    font-size: 2rem;
+}
+
+.heading-tertiary {
+    height: 4rem;
+    overflow-y: hidden;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #4c4c4c;
+    font-weight: 500;
+}
+
+.paragraph-categories-top__text {
+    font-size: 1.4rem;
+    color: #777B9A;
+    display: inline-block;
+    transition: all .2s;
+
+    & a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: 500;
+
+        &:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+    }
+}
+
+.heading__subscribe {
+    color: #0D86C3;
+    font-size: 1.5rem;
+}
+
+.paragraph__subscribe {
+    color: #444;
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+    display: inline-block;
+}
+
+// FOOTER
+
+.footer__heading {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #818181;
+}

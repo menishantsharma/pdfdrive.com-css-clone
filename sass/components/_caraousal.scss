@@ -1,0 +1,73 @@
+.caraousal {
+    background-color: #fff;
+    border-radius: 2rem;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    position: relative;
+    height: 28rem;
+
+    &__icon {
+        // background-color: darkgoldenrod;
+        display: inline-block;
+
+        &--left {
+            position: absolute;
+            top: 51%;
+            left: 2%;
+            transform: translate(-2%, -51%);
+            color: #808080;
+        }
+
+        &--right {
+            position: absolute;
+            top: 51%;
+            right: 2%;
+            transform: translate(-2%, -51%);
+            color: #FF0000;
+
+        }
+
+        &-itself {
+            font-size: 2.5rem;
+            cursor: pointer;
+        }
+    }
+
+    &__list {
+        // background-color: yellow;
+        width: 80%;
+        margin-left: 10%;
+        vertical-align: middle;
+        position: absolute;
+        top: 60%;
+        transform: translateY(-60%);
+
+        &-itself {
+            // background-color: orange;
+            display: -webkit-box;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        &-item {
+            // background-color: red;
+            min-width: 5rem;
+            max-width: 19rem;
+            // display: inline-block;
+            &:not(:last-child) {
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    &__link {
+        background-color: black;
+    }
+
+    &__img {
+        &-itself {
+            height: 10rem;
+            // background-color: blue;
+        }
+    }
+}

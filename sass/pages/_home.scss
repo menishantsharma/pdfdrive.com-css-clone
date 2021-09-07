@@ -1,0 +1,145 @@
+.content {
+    background-color: #E9EBEE;
+    margin-top: $header-height;
+    padding-top: 4rem;
+    // height: 150rem;
+}
+
+.section-books,
+.section-caraousal {
+    width: 90%;
+    margin: 0 auto;
+
+    @include respond(lp) {
+        width: 95%;
+    }
+}
+
+.book-list {
+    list-style: none;
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.load-more {
+    background-image: linear-gradient(180deg, #fff, #F6F6F6);
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: inset 0 1px 0 0 #fff;
+    border: 1px solid #dcdcdc;
+    font-size: 1.8rem;
+    cursor: pointer;
+
+    &:hover {
+        border-color: #b1b0b0;
+    }
+
+    &__content {
+        // background-color: yellow;
+        width: 50%;
+        display: inline-block;
+
+        &-icon {
+            // background-color: black;
+            display: inline-block;
+
+            &-itself {
+                // font-size: 2.2rem;
+                color: #2D96C3;
+            }
+        }
+    }
+
+    &__text {
+        // background-color: blue;
+        display: inline-block;
+        color: #777272;
+        // height: 2rem;
+        // font-size: 2rem;
+        font-weight: 500;
+        text-shadow: 0 1px 0 #fff;
+    }
+}
+
+.section-categories {
+    margin-top: .5rem;
+}
+
+.paragraph-categories-top__icon {
+    color: #777272;
+    font-size: 1.5rem;
+    margin-right: 3px;
+}
+
+// SUBSCRIBE SECTION
+
+.section-subscribe {
+    text-align: left;
+    width: 85%;
+}
+
+.form__subscribe {
+    // background-color: blue;
+    height: 4rem;
+    width: 100%;
+    @include clearfix();
+    border-radius: .3rem;
+    &-input {
+        background-color: #fff;
+        float: left;
+        border: none;
+        height: 100%;
+        width: 70%;
+        border-top-left-radius: .3rem;
+        border-bottom-left-radius: .3rem;
+        padding-left: 1rem;
+        border: 1px solid #ced4da;
+        border-right: none;
+        transition: all .2s;
+
+        &:focus {
+            outline: none;
+            border: 1px solid #ced4da;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+        }
+
+        &::placeholder {
+            color: #8475A7;
+        }
+    }
+
+    &-submit {
+        background-color: #e2e2e2;
+        font-size: 1.5rem;
+        float: left;
+        border: none;
+        height: 100%;
+        width: 30%;
+        color: #696969;
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+        border: 1px solid rgba(0,0,0,.15);
+        cursor: pointer;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.link__subscribe {
+    text-decoration: none;
+    color: #4BB4F6;
+}
+
+.play-store-img {
+    width: 17rem;
+    margin-left: -1rem;
+}

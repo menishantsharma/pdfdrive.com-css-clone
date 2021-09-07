@@ -1,0 +1,51 @@
+.footer {
+    width: 90%;
+    margin-left: 2%;
+    // height: 50rem;
+    background-color: #fff;
+    text-align: left;
+    padding: 5rem;
+
+    @include respond(lp) {
+        padding: 3rem;
+    }
+
+    display: table;
+    border: .1rem solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    border-radius: .3rem;
+
+    &__logo {
+        // height: 100%;
+        // width: 100%;
+        margin-top: 2rem;
+        
+
+        &-img {
+            width: 80%;
+            // display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    &__menu-list {
+        list-style: none;
+    }
+
+    &__menu-item {
+        &:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__menu-link {
+        text-decoration: none;
+        font-size: 1.7rem;
+        color: #4A86D1;
+        transition: all .2s;
+
+        &:hover {
+            color: #09428a;
+        }
+    }
+}
